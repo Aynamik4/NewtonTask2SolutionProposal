@@ -52,13 +52,13 @@ namespace NewtonTask2SolutionProposalProject
                     input = Console.ReadLine();
                     int finishSecond = int.Parse(input);
 
-                    // Check if finish hour is less than start hour.
+                    // Check if finish hour is less than or equal to start hour.
                     if (finishHour <= startHour)
                         finishHour = startHour + (24 - startHour + finishHour);
 
                     int totalHours = finishHour - startHour;
 
-                    // Check if finish minute is less than start minute.
+                    // Check if finish minute is less than or equal to start minute.
                     if (finishMinute <= startMinute)
                     {
                         totalHours--;
@@ -67,7 +67,7 @@ namespace NewtonTask2SolutionProposalProject
 
                     int totalMinutes = finishMinute - startMinute;
 
-                    // Check if finish second is less than start second.
+                    // Check if finish second is less than or equal to start second.
                     if (finishSecond <= startSecond)
                     {
                         totalMinutes--;
@@ -88,7 +88,7 @@ namespace NewtonTask2SolutionProposalProject
                         totalMinutes = 0;
                     }
 
-                    // Convert the number of hours, minutes and seconds to seconds
+                    // Convert the number of hours, minutes and seconds to seconds.
                     int totalTimeInSeconds = totalHours * 60 * 60 + totalMinutes * 60 + totalSeconds;
                     int winnerTotalTimeInSeconds = winnerHours * 60 * 60 + winnerMinutes * 60 + winnerSeconds;
 
