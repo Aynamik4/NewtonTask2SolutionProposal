@@ -94,10 +94,10 @@ namespace NewtonTask2SolutionProposalProject
 
                     if (totalTimeInSeconds <= winnerTotalTimeInSeconds)
                     {
+                        winnerStartNumber = startNumber;
                         winnerHours = totalHours;
                         winnerMinutes = totalMinutes;
                         winnerSeconds = totalSeconds;
-                        winnerStartNumber = startNumber;
                     }
                 }
 
